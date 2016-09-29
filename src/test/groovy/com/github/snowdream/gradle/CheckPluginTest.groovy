@@ -9,7 +9,7 @@ class CheckPluginTest {
     @Test
     public void greeterPluginAddsGreetingTaskToProject() {
         Project project = ProjectBuilder.builder().build()
-        project.pluginManager.apply 'com.github.snowdream.gradle'
+        project.pluginManager.apply 'java-version-check'
 
         assertTrue(project.tasks.checkJavaVersion instanceof CheckTask)
     }
