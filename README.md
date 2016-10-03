@@ -15,7 +15,7 @@ buildscript {
     }
 }
 
-apply plugin: "java-version-check"
+apply plugin: "com.github.snowdream.gradle.java-version-check"
 
 jarconf{
     file "file path for jar"
